@@ -1,0 +1,52 @@
+@font-face {
+    font-family: DXOld;
+    src: url(Fonts/DXOldStandardCondensedNo2.ttf);
+}
+    
+body {
+    text-align: center;
+    font-family: DXOld;
+}
+
+.vl{
+    border-right: 6px solid black;
+    height: 500px;
+    float: right;
+}
+
+img.Logo {
+    width: 600px;
+    margin-left: 4px;
+    margin-top: 5px;
+}
+img.Photo{
+    width: 200px; 
+    border-radius: 50%;
+    float: center;
+}
+img.Newspaper{
+    border: 2px solid #424242;
+    border-radius: 20px;
+    width: 600px;
+    /* margin-bottom: 250px; */
+    float:center;
+}
+
+p.Title{
+    font-weight: bold; 
+    font-size: 40px;
+}
+p.Proletarians{
+    font-size: 10; 
+    font-weight: normal;
+    margin-left: 10px; 
+    margin-top: 10px;
+}
+p.MainText{
+    font-weight: normal;
+    font-size: 28px;
+}
+p.Anecdotes{
+    font-size: 28px;
+    
+}
