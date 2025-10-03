@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Газета "Советский Дирижаблист"</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer type="text/javascript" src="index.js"></script>
   </head>
 
   <body>
@@ -54,20 +55,59 @@
       <div>
         <hr>
         <p class="MainText">Подписаться на газету Советский Дирижаблист</p>
-        <form action="">
-          <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email"><br>
-          <label for="partyCard">Номер партийного билета:</label><br>
-          <input type="text" id="partyCard" name="partyCard"><br>
-          <label for="rubleAccount">Номер счёта в цифровом советском рубле:</label><br>
-          <input type="text" id="rubleAccount" name="rubleAccount"><br>
-          <input type="checkbox" name="children" id="children"></checkbox>
-          <label for="children">Обучен грамоте</label><br>
-          <input type="checkbox" name="job" id="job"></checkbox>
-          <label for="job">Трудоустроен и выполняю план</label><br>
-          <input type="checkbox" name="products" id="products"></checkbox>
-          <label for="products">Уклонялся от продразвёрстки</label><br>
-          <input type="submit" value="Подписаться">
+        <form action="" method="get">
+          <div>
+            <label for="bday" >Дата рождения Ленина:</label><br>
+            <input type="date" id="bday" name="bday" required>
+          </div>
+          <div>
+            <label for="fiveYears">Сколько лет в пятилетке?</label><br>
+            <input type="number" id="fiveYears" name="fiveYears" min="0" max="20" required>
+          </div>
+          <div>
+            <label for="email" >Адрес уникального электронного почтового ящика:</label><br>
+            <input type="email" id="email" name="email" placeholder="адрес@почта.ссср" required>
+          </div>
+          <div>
+            <label for="cardNumber">Номер партийного билета:</label><br>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="номер билета" required>
+          </div>
+          <div>
+            <label for="rubleAccount">Номер счёта в цифровом советском рубле:</label><br>
+            <input type="password" id="rubleAccount" name="rubleAccount" placeholder="Номер счёта" required>
+          </div>
+          
+          <div>
+              <label for="alcohol">Степень алкоголизма</label><br>
+              <select name="alcohol" id="alcohol">
+                <option value="notDrunk">Не пьян</option>
+                <option value="sober">Трезв</option>
+                <option value="crystalSober">Кристально Трезв</option>
+              </select>
+          </div>
+
+          <div>
+            <input type="checkbox" name="education" id="education">
+            <label for="education">Обучен грамоте</label><br>
+          </div>
+
+          <div>
+            <input type="checkbox" name="job" id="job">
+            <label for="job">Выполняю план</label><br>
+          </div>
+
+          <div>
+            <input type="checkbox" name="products" id="products" required>
+            <label for="products">Уклонялся от продразвёрстки</label><br>
+          </div>
+          
+          <div>
+            <input type="checkbox" name="spy" id="spy" required>
+            <label for="spy">Являюсь шпионом иностранной разведки</label><br>
+          </div>
+          
+          <!-- <button id="subscribe">Подписаться</button> -->
+          <input type="button" id="subscribe" value="Подписаться">
         </form>
       </div>
 
@@ -79,5 +119,4 @@
     </footer>
   </body>
 </html>
-
 
